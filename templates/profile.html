@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!--profile page-->
+    <div class="profile-container">
+        <img src={% static "images/cover.png" %} class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src={% static "images/profile.png" %} class="pd-image">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src={% static "images/member-1.png" %}>
+                        <img src={% static "images/member-2.png" %}>
+                        <img src={% static "images/member-3.png" %}>
+                        <img src={% static "images/member-4.png" %}>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src={% static "images/add-friends.png" %}> Friend</button>
+                <button type="button"><img src={% static "images/message.png" %}> Message</button>
+                <br>
+                <a href="#"><img src={% static "images/more.png" %}></a>
+            </div>
+        </div>
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Believe in yourself and you can do unbelievable things.
+                        <img src={% static "images/feeling.png" %}>
+                    </p>
+                    <hr>
+                    <ul>
+                        <li><img src={% static "images/profile-job.png" %}> Director at 99media Ltd</li>
+                        <li><img src={% static "images/profile-study.png" %} alt=""> Studied at Amity University</li>
+                        <li><img src={% static "images/profile-study.png" %} alt=""> Went to DPS Nepal.</li>
+                        <li><img src={% static "images/profile-home.png" %} alt=""> Lives in Kathmandu, Nepal</li>
+                        <li><img src={% static "images/profile-location.png" %} alt=""> From Jorpati, Kathmandu</li>
+                    </ul>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="#">All Photos</a>
+                    </div>
+                    <div class="photo-box">
+                        <div><img src={% static "images/photo1.png" %}></div>
+                        <div><img src={% static "images/photo2.png" %}></div>
+                        <div><img src={% static "images/photo3.png" %}></div>
+                        <div><img src={% static "images/photo4.png" %}></div>
+                        <div><img src={% static "images/photo5.png" %}></div>
+                        <div><img src={% static "images/photo6.png" %}></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="#">All friends</a>
+                    </div>
+                    <p>120 (10 mutual)</p>
+                    <div class="friends-box">
+                        <div><img src={% static "images/member-1.png" %}><p>Joseph N</p> </div>
+                        <div><img src={% static "images/member-2.png" %}><p>Nathan N</p> </div>
+                        <div><img src={% static "images/member-3.png" %}><p>George D</p> </div>
+                        <div><img src={% static "images/member-4.png" %}><p>Francis L</p> </div>
+                        <div><img src={% static "images/member-5.png" %}><p>Anthony E</p> </div>
+                        <div><img src={% static "images/member-6.png" %}><p>Michael A</p></div>
+                        <div><img src={% static "images/member-7.png" %}><p>Edward M</p></div>
+                        <div><img src={% static "images/member-8.png" %}><p>Bradon C</p></div>
+                        <div><img src={% static "images/member-9.png" %}><p>James Doe</p></div>
+       
+                    </div>
+                </div>
+            </div>
+            <div class="post-col">
+            <!--Write post container-->
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src={% static "images/profile-pic.png" %}>
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea name="text-data" rows="3" placeholder="What's on your mind, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src={% static "images/live-video.png" %}> Live Video</a>
+                            <a href="#"><img src={% static "images/photo.png" %}> Photo/Video</a>
+                            <a href="#"><img src={% static "images/feeling.png" %}> Feeling/Activity </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--posts container-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src={% static "images/profile-pic.png" %}>
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 21 2022, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">I am practising web development. Developing and Designing social media website. 
+                        <a href="#">#kiranDevelopment<a> <a href="#">#Development</a></p>
+                    <img src={% static "images/feed-image-1.png" %} class="post-img">
+                    <hr>
+                    <br>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src={% static "images/like-blue.png" %}> 120</div>
+                            <div><img src={% static "images/comments.png" %}> 45</div>
+                            <div><img src={% static "images/share.png" %}> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src={% static "images/profile-pic.png" %}><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+            <!--posts container 2-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src={% static "images/profile-pic.png" %}>
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 21 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Outing With friends. Enjoying winter vacations.
+                    <a href="#">#kiranFriends<a> <a href="#">#Family</a></p>
+                <img src={% static "images/feed-image-2.png" %} class="post-img">
+                <hr>
+                <br>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src={% static "images/like-blue.png" %}> 80</div>
+                        <div><img src={% static "images/comments.png" %}> 34</div>
+                        <div><img src={% static "images/share.png" %}> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src={% static "images/profile-pic.png" %}><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--posts container 3-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src={% static "images/profile-pic.png" %}>
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 21 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">I am practising web development. Developing and Designing social media website. 
+                    <a href="#">#kiranDevelopment<a> <a href="#">#Development</a></p>
+                <img src={% static "images/feed-image-3.png" %} class="post-img">
+                <hr>
+                <br>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src={% static "images/like-blue.png" %}> 300</div>
+                        <div><img src={% static "images/comments.png" %}> 23</div>
+                        <div><img src={% static "images/share.png" %}> 50</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src={% static "images/profile-pic.png" %}><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--posts container 4-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src={% static "images/profile-pic.png" %}>
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 21 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">I am practising web development. Developing and Designing social media website. 
+                    <a href="#">#kiranDevelopment<a> <a href="#">#Development</a></p>
+                <img src={% static "images/feed-image-4.png" %} class="post-img">
+                <hr>
+                <br>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src={% static "images/like-blue.png" %}> 120</div>
+                        <div><img src={% static "images/comments.png" %}> 45</div>
+                        <div><img src={% static "images/share.png" %}> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src={% static "images/profile-pic.png" %}><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--posts container 5-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src={% static "images/profile-pic.png" %}>
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 21 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Development Meeting with co-ordinates and with managers. Project management projects and Django Development.
+                    <a href="#">#kiranDevelopment<a> <a href="#">#Development</a></p>
+                <img src={% static "images/feed-image-5.png" %} class="post-img">
+                <hr>
+                <br>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src={% static "images/like-blue.png" %}> 500</div>
+                        <div><img src={% static "images/comments.png" %}> 34</div>
+                        <div><img src={% static "images/share.png" %}> 45</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src={% static "images/profile-pic.png" %}><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock content %}
+
+
+
+
